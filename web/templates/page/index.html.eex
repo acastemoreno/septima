@@ -1,0 +1,4 @@
+<div class="jumbotron">
+  <h2>Login por Ueberauth</h2>
+  <p class="lead"><%= link "Login with Github", to: auth_path(@conn, :request, "github"), class: "btn btn-success text-center" %></p>
+</div>
