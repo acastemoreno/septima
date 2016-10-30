@@ -32,6 +32,13 @@ config :guardian, Guardian,
      admin: [:dashboard, :make_payments]
     }
 ```
+## Gen secret_key
+```elixir
+$ iex -S mix
+iex(1)> jwk = JOSE.JWS.generate_key(%{"alg" => "ES512"})
+iex(2)> jwk |> JOSE.JWK.to_map |> elem(1)
+```
+
 ## Learn more
 
   * Official website: http://www.phoenixframework.org/
